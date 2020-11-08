@@ -19,7 +19,7 @@ This project is divided in the following key sections:
 ## Running the Project
 
 ### Instructions:
-(part of this text was extracted from the exercise)
+(this part of the text was extracted from the exercise)
 
 1. Run the following commands in the project's root directory to set up database and model:
 
