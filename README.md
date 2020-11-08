@@ -4,17 +4,11 @@ This is a webapp that provides a visualization tool for categorizing a message i
 
 ## Background and motivation
 
-This project is part of Udacity's Data Science nanodegree. Its aim is 
+This project is part of Udacity's Data Science nanodegree. It's purpose includes: 
 
-1. Clean and use data gathered from two datasets and store it in a database;
-2. Build and train a Machine Learning model using Natural Language Process that is able to classify a message into 36 different categories
+1. Cleaning and loading data gathered from two datasets and store it in a database, making it ready for use;
+2. Build and train a Machine Learning model using Natural Language Process that is able to classify a message into 36 different categories;
 3. Use this trained moded to classify a message inputed by user.
-
-This project is divided in the following key sections:
-
-- Processing data, building an ETL pipeline to extract data from source, clean the data and save them in a SQLite DB (data folder)
-- Machine learning pipeline to train the which can classify text message in 36 categories (model folder)
-- Web app which can show model results for an inputed message (app folder)
 
 ## Running the Project
 
