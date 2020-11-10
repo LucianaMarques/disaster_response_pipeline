@@ -51,6 +51,7 @@ def tokenize(text):
 
     return clean_tokens
 
+
 def build_model():
     pipeline = Pipeline([
         ('features', FeatureUnion([
@@ -61,7 +62,11 @@ def build_model():
         ])),
         ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
-    return pipeline
+    #GridSearchCV improvement
+    parameters = {'clf__estimator__max_depth': [10, 20, 30, 50],
+              'clf__estimator__min_samples_leaf':[2, 3, 5, 10, 20, 45]}
+    cv = GridSearchCV(pipeline, parameters)
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
